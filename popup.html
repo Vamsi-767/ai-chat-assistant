@@ -76,68 +76,65 @@
   border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
-  background: #ccf0ac; /* light indigo background */
-  padding: 8px;
-}
+  background: #ccf0ac; 
+  padding: 8px;}
 
-#summaryStyle:hover {
-  background: #c3d68b; /* a little darker on hover */
-}
+ #summaryStyle:hover {
+  background: #c3d68b; }
 
 
   </style>
 </head>
-<body>
+ <body>
   <h3 style="margin-top:0; text-align:center;">AI Chat Assistant</h3>
 
   <!-- Top bar -->
-<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+ <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
   <select id="modelSelect" style="flex:1; margin-right:6px; padding:6px;">
     <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
     <option value="gpt-4o-mini">GPT-4o Mini</option>
     <option value="gpt-4o">GPT-4o</option>
   </select>
   <button id="toggleThemeBtn" style="padding:6px;">🌙</button>
-</div>
+ </div>
 
-<!-- Chat area -->
-<div id="chat"></div>
+ <!-- Chat area -->
+ <div id="chat"></div>
 
-<!-- Q&A input -->
+ <!-- Q&A input -->
 <div style="display:flex; gap:6px; margin-top:8px;">
   <input type="text" id="userInput" placeholder="Type your question..." style="flex:1; padding:6px;">
   <button id="sendBtn" style="background:#1092e9;">Send</button>
-</div>
+ </div>
 
-<!-- Summary style selector -->
-<select id="summaryStyle" style="width:100%; margin-top:6px; padding:6px;">
+ <!-- Summary style selector -->
+ <select id="summaryStyle" style="width:100%; margin-top:6px; padding:6px;">
   <option value="bullets" >🔹 Short Bullets</option>
   <option value="detailed">📄 Detailed Summary</option>
-  <option value="eli5">🧸 Explain like I'm 5</option>
-</select>
+ </select>
 
-<!-- Summarize + Sentiment -->
-<div style="display:flex; gap:6px; margin-top:8px;">
+ <!-- Summarize + Sentiment -->
+ <div style="display:flex; gap:6px; margin-top:8px;">
   <button id="summarizeBtn" style="flex:1; background:#c7d2fe;">📄 Summarize</button>
   <button id="sentimentBtn" style="flex:1; background:#f1f0ab;">🧐 Sentiment</button>
-</div>
+ </div>
 
-<!-- Numbers -->
-<button id="numbersBtn" style="margin-top:8px; width:100%; background:#71de97;">
+ <!-- Numbers -->
+ <button id="numbersBtn" style="margin-top:8px; width:100%; background:#71de97;">
   🔢 List Numbers
-</button>
+ </button>
 
-<!-- Ask About Page -->
-<div style="display:flex; gap:6px; margin-top:8px;">
+ <!-- Ask About Page -->
+ <div style="display:flex; gap:6px; margin-top:8px;">
   <input type="text" id="pageQuestion" placeholder="Ask about this page..." style="flex:2; padding:6px;">
   <button id="askPageBtn" style="flex:1; background:#5b69e6;">Ask</button>
-</div>
+ </div>
 
-<!-- Clear Chat -->
-<div style="text-align:center; margin-top:10px;">
+ <!-- Clear Chat -->
+ <div style="text-align:center; margin-top:10px;">
   <button id="clearChatBtn" style="background:#f05f5f;">🗑️ Clear Chat</button>
-</div>
+ </div>
 
   <script src="popup.js"></script>
-</body>
+ </body>
 </html>

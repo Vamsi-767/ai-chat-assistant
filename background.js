@@ -30,8 +30,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ text: "Network error: " + err.message });
       }
     })();
-
-    // 👇 Important: keeps the message channel open until async work finishes
     return true;
   }
 });

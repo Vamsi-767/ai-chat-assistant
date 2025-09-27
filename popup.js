@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // 2. API Key
   
-  const OPENAI_API_KEY = "KEY";
+  const OPENAI_API_KEY = "MY_OPENAI_API_KEY"; 
 
 
   // 3. Helper Functions
@@ -91,9 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   prompt = "Summarize the following page content as short bullet points:\n\n";
                 } else if (style === "detailed") {
                   prompt = "Provide a detailed summary of the following page content:\n\n";
-                } else if (style === "eli5") {
-                  prompt = "Explain the following page content in very simple terms, like explaining to a 5 year old:\n\n";
-                }
+                } 
 
                 const reply = await callOpenAI(prompt + response.content);
                 addMessage("AI", reply);
@@ -210,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---- Clear Chat ----
   clearChatBtn.addEventListener("click", () => {
-    chatBox.innerHTML = ""; // wipes chat history
+    chatBox.innerHTML = ""; 
     addMessage("AI", "Chat cleared.");
   });
 
